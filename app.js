@@ -13,6 +13,14 @@ app.get("/", function(req, res){
 
 })
 
+app.post("/", function(req, res){
+  // var numb1 = Number(req.body.num1);
+  // var numb2 = Number(req.body.num2);
+  // results = numb1 + numb2;
+
+  res.send("The results of ");
+})
+
 app.listen(3000, function(){
   console.log("Server started on port 3000")
 });
