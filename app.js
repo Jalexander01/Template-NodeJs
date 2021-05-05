@@ -3,6 +3,9 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
+//to use ejs with express
+app.set('view engine', 'ejs');
+
 app.use(express.static("public"));
 
 //use body-parser to grab the data from the html file we want
