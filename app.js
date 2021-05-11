@@ -12,9 +12,11 @@ app.use(express.static("public"));//use static files like style.css and js
 app.get("/", function(req, res){
   // console.log(req);
   // res.sendFile();
-  res.sendFile(__dirname + "/index.html");
+  // res.sendFile(__dirname + "/index.html");
   // res.send(__dirname);
 
+//ejs
+res.render('index');
 })
 
 //post function will receive information from the browser to the server
