@@ -22,7 +22,7 @@ app.post("/", function(req, res){
   res.send("The results of ");
   res.redirect("/");//redirects to app.get function or another function
 })
-
-app.listen(3000, function(){
+//process.env.PORT || heroku code
+app.listen(process.env.PORT || 3000, function(){
   console.log("Server started on port 3000")
 });
